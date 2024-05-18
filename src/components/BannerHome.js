@@ -99,4 +99,7 @@ const BannerHome = () => {
             </div>
         </section>
     )
-}
+};
+
+
+export default BannerHome
