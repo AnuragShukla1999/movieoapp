@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import Card from '../components/Card.js';
 import HorizontalScollCard from '../components/HorizontalScrollCard.js';
 import axios from 'axios';
-import useFetch from '../hooks/';
+import useFetch from '../hooks/useFetch.jsx';
 
 const Home = () => {
 
@@ -21,7 +21,7 @@ const Home = () => {
        <HorizontalScollCard data={nowPlayingData} heading={"Now Playing"} media_type={"movie"} />
        <HorizontalScollCard data={topRatedData} heading={"Top Rated Movies"} media_type={"movie"} />
        <HorizontalScollCard data={popularTvShowData} heading={"Popular TV Show"} media_type={"tv"} />
-       <HorizontalScollCard data={onTheAirShowData} />
+       <HorizontalScollCard data={onTheAirShowDate} />
     </div>
   )
 }

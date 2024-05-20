@@ -4,6 +4,9 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setBannerData, setImageURL } from './store/movieoSlice.js';
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
+import MobileNavigation from './components/MobileNavigation.js';
 
 function App() {
 
@@ -39,13 +42,13 @@ function App() {
 
   return (
     <main className='pb-14 lg:pb-0'>
-      <Header />
+      <Header/>
 
       <div className='min-h-[90vh]'>
         <Outlet />
       </div>
-      <Footer />
-      <MobileNavigation />
+      <Footer/>
+      <MobileNavigation/>
     </main>
   );
 }

@@ -5,7 +5,7 @@ import useFetchDetails from '../hooks/useFetchDetails'
 import { useSelector } from 'react-redux'
 import moment from 'moment'
 import Divider from '../components/Divider'
-import HorizontalScollCard from '../components/HorizontalScollCard'
+import HorizontalScollCard from '../components/HorizontalScrollCard.js'
 import VideoPlay from '../components/VideoPlay'
 
 const DetailsPage = () => {
@@ -38,7 +38,7 @@ const DetailsPage = () => {
 
   const duration = (data?.runtime / 60)?.toFixed(1)?.split(".");
 
-  const writer = costData?.crew?.filter(el => el?.job === "writer")?.map(el => el?.name)?.join(", ");
+  const writer = castData?.crew?.filter(el => el?.job === "writer")?.map(el => el?.name)?.join(", ");
 
   return (
     <div>
